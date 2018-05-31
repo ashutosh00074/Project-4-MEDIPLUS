@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/go_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/menu_goto_homepage"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_alarmlist"
+        android:icon="@drawable/ic_alarm_clock"
+        android:title="@string/alarmlist"
+        app:showAsAction="always" />
+</menu>

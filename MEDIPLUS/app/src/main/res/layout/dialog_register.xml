@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/btn_reg"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/register_UID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:cursorVisible="false"
+        android:drawableLeft="@drawable/ic_user_id"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/ic_user_id"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/register_PASS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:cursorVisible="false"
+        android:drawableLeft="@drawable/ic_pass_key"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/ic_pass_key"
+        android:hint="@string/pass"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/register_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/capsule_style"
+            android:text="@string/btn_reg"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/cap_style"
+            android:text="@string/btn_cancel"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

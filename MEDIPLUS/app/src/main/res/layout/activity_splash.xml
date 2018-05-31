@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d8f9e"
+    tools:context="com.tech.gigabyte.mediplus.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15sp"
+        android:id="@+id/splash_layout"
+        android:background="@drawable/common_style">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#323a3d"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:targetApi="jelly_bean" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="400sp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/common_style"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/background_splash" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="10sp"
+            android:drawableStart="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="@string/app_msg"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

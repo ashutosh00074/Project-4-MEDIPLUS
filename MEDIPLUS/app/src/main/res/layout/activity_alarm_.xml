@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_drug_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.tech.gigabyte.mediplus.AlarmActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:elevation="15sp"
+        android:src="@drawable/ic_alarm_clock"
+        tools:targetApi="lollipop" />
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/login_style"
+        android:elevation="10sp"
+        android:orientation="vertical"
+        tools:targetApi="lollipop">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/al_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/Alarm_name" />
+
+            <EditText
+                android:id="@+id/al_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/alarm_message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/al_date"
+                    android:layout_width="0sp"
+                    android:layout_height="35sp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/capsule_style"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/set_date"
+                    android:textColor="#ffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/al_time"
+                    android:layout_width="0sp"
+                    android:layout_height="35sp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/cap_style"
+                    android:text="@string/set_time"
+                    android:textColor="#ffff"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/al_DatePicker"
+                style="@android:style/Widget.DatePicker"
+                android:layout_width="200sp"
+                android:layout_height="90sp"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/display_date"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/display_time"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/al_TimePicker"
+                style="@android:style/Widget.Material.TimePicker"
+                android:layout_width="230sp"
+                android:layout_height="90sp"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/al_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/Everyday"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_setAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/common_style"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Set Alarm"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/gotomainpage"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/menu_goto_homepage"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_add_alarm"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/add_alarm"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_shopping_alarm"
+        android:icon="@drawable/ic_action_cart"
+        android:title="@string/shopping"
+        app:showAsAction="always" />
+</menu>

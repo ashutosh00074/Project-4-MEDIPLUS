@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_drug__data_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tech.gigabyte.mediplus.DrugActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_saved_drug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp">
+
+        <ScrollView
+            style="@android:style/Widget.Material.Light.ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:clipToPadding="false"
+            android:fillViewport="false"
+            android:scrollbarStyle="outsideOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/drug_name"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_drugname" />
+
+                <TextView
+                    android:id="@+id/tv_disp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_disp_name"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/drug_description"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_below="@+id/a"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_description" />
+
+                <TextView
+                    android:id="@+id/tv_disp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_desc"
+                    android:layout_marginLeft="60sp"
+                    android:layout_marginStart="60sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_disp_desc"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#000000" />
+
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/drug_price"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_below="@+id/b"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_price" />
+
+                <TextView
+                    android:id="@+id/tv_disp_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_disp_price"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/c"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/type_of_drug"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_below="@+id/c"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_category" />
+
+                <TextView
+                    android:id="@+id/tv_disp_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cat"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_disp_cat"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/d"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/drug_type"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_below="@+id/d"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_type" />
+
+                <TextView
+                    android:id="@+id/tv_disp_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_type"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/e"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_disp_type"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_inst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/Instructions"
+                    android:textAllCaps="false"
+                    android:textColor="#323a3d"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_below="@+id/e"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/ic_instruction" />
+
+                <TextView
+                    android:id="@+id/tv_disp_inst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_inst"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginStart="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textColor="#323a3d"
+                    android:textSize="18sp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/id_drug_data"
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    android:layout_below="@+id/tv_disp_inst"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

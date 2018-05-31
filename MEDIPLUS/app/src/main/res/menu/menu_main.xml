@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/alarm_mainpage"
+        android:icon="@drawable/ic_alarm_clock"
+        android:title="@string/alarm_detail_main"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search_for_medicines"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/search_drug_main"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_shop"
+        android:title="@string/shop_for_medicine"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_pharmacy"
+        android:title="@string/pharmacy_phonebook"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+</menu>

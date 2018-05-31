@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/ic_name"
+        android:hint="@string/Pharmacy_name"
+        android:textSize="@dimen/text_size_each_row" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/ic_phone"
+        android:hint="@string/Pharmacy_number"
+        android:inputType="number"
+        android:textSize="@dimen/text_size_each_row" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/ic_address"
+        android:hint="@string/Pharmacy_address"
+        android:textSize="@dimen/text_size_each_row" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_Save_pharmacy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/capsule_style"
+            android:text="@string/btn_save"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel_pharmacy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/cap_style"
+            android:text="@string/btn_cancel"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
